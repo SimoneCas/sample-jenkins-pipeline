@@ -5,6 +5,8 @@ pipeline {
       agent any
       steps {
         echo 'Start Sample Pipeline'
+        sleep 2
+        echo 'Print after sleep'
       }
     }
 
