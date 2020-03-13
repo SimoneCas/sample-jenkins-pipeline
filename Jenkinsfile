@@ -9,11 +9,5 @@ pipeline {
       }
     }
 
-    stage('Second Stage') {
-      steps {
-        sh 'echo Another Placeholder'
-      }
-    }
-
   }
 }
