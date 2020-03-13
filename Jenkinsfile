@@ -5,7 +5,6 @@ pipeline {
       agent any
       steps {
         echo 'Start Sample Pipeline'
-        sh 'echo Success!'
       }
     }
 
