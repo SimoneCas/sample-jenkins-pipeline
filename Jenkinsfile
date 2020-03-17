@@ -19,7 +19,7 @@ pipeline {
 
     stage('Test Stage') {
       steps {
-        junit '**/surefire-reports/*.'
+        junit 'target/surefire-reports/*'
       }
     }
 
