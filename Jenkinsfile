@@ -19,7 +19,7 @@ pipeline {
 
     stage('Test Stage') {
       steps {
-        junit '**/site/**/*'
+        junit '**/site/*/*'
       }
     }
 
