@@ -13,12 +13,13 @@ pipeline {
     stage('Build Stage') {
       steps {
         bat(script: './build.cmd', returnStdout: true)
+        archiveArtifacts(artifacts: 'target/*.jar', fingerprint: true)
       }
     }
 
     stage('Test Stage') {
       steps {
-        bat(script: './test.cmd', returnStdout: true)
+        junit '**/surefire-reports/**/*'
       }
     }
 
