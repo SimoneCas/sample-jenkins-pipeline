@@ -12,13 +12,13 @@ pipeline {
 
     stage('Build Stage') {
       steps {
-        bat(script: './jenkins/build.cmd', returnStdout: true)
+        bat(script: './build.cmd', returnStdout: true)
       }
     }
 
     stage('Test Stage') {
       steps {
-        bat(script: './jenkins/test.cmd', returnStdout: true)
+        bat(script: './test.cmd', returnStdout: true)
       }
     }
 
